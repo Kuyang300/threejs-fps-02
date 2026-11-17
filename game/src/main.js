@@ -1,1 +1,330 @@
-Ly8gbWFpbi5qcyDigJQgYm9vdHN0cmFwIGFuZCB0aGUgcm91bmQgc3RhdGUgbWFjaGluZS4gU2ltdWxhdGlvbiBydW5zIG9uIGEKLy8gZml4ZWQgMS82MCBzIHN0ZXAga2VwdCBhcGFydCBmcm9tIHJlbmRlcmluZzsgdGhlIHJlbmRlcmVyIG9ubHkgZHJhd3MuCi8vIEZsb3c6IG1lbnUg4oaSIGJ1eSBwaGFzZSAoMTQgcywgc2hvcCBvcGVuKSDihpIgbGl2ZSByb3VuZCAoMTAwIHMpIOKGkiByb3VuZCBlbmQKLy8gKDQgcykg4oaSIG5leHQgYnV5IHBoYXNlLCB1bnRpbCBvbmUgdGVhbSByZWFjaGVzIDUgcm91bmRzIG9yIDkgcm91bmRzIHBhc3MuCi8vIFJvdW5kcyBhcmUgd29uIGJ5IGVsaW1pbmF0aW5nIHRoZSBvdGhlciB0ZWFtLCBieSBkZXRvbmF0aW5nIHRoZSBwbGFudGVkCi8vIHNwaWtlLCBieSBkZWZ1c2luZyBpdCwgb3IgYnkgdGhlIGRlZmVuZGVycyBzdXJ2aXZpbmcgdGhlIHRpbWVyLgovLyA/c2hvdD1zdGFydHxwbGF5fGVuZCBwdXRzIHRoZSBnYW1lIGluIGEgZGV0ZXJtaW5pc3RpYyBzY3JlZW5zaG90IHN0YXRlLgppbXBvcnQgKiBhcyBUSFJFRSBmcm9tICd0aHJlZSc7CmltcG9ydCB7CiAgZnJlc2hTdGF0ZSwgUk9VTkRfVElNRSwgQlVZX1RJTUUsIFdJTl9ST1VORFMsIE1BWF9ST1VORFMsCiAgUk9VTkRfV0lOX1JFV0FSRCwgUk9VTkRfTE9TU19SRVdBUkQsIFdFQVBPTlMsCn0gZnJvbSAnLi9zdGF0ZS5qcyc7CmltcG9ydCB7IGNyZWF0ZVdvcmxkIH0gZnJvbSAnLi93b3JsZC5qcyc7CmltcG9ydCB7IGNyZWF0ZVBsYXllciwgcmVzZXRQbGF5ZXIsIHVwZGF0ZVBsYXllciwgZXF1aXBXZWFwb24sIGJ1eUl0ZW0sIHJlbG9hZCwgdGhyb3dHcmVuYWRlIH0gZnJvbSAnLi9wbGF5ZXIuanMnOwppbXBvcnQgeyBzcGF3bkJvdHMsIHVwZGF0ZUJvdCB9IGZyb20gJy4vYm90cy5qcyc7CmltcG9ydCB7IGNyZWF0ZUh1ZCB9IGZyb20gJy4vaHVkLmpzJzsKaW1wb3J0IHsgY3JlYXRlQXVkaW8gfSBmcm9tICcuL2F1ZGlvLmpzJzsKaW1wb3J0IHsgc3RlcEdyZW5hZGUgfSBmcm9tICcuL2NvbWJhdC5qcyc7Cgpjb25zdCBwYXJhbXMgPSBuZXcgVVJMU2VhcmNoUGFyYW1zKGxvY2F0aW9uLnNlYXJjaCk7CmNvbnN0IHNob3RNb2RlID0gcGFyYW1zLmdldCgnc2hvdCcpOwpjb25zdCBkb3dubG9hZFNob3QgPSBwYXJhbXMuZ2V0KCdkb3dubG9hZCcpID09PSAnMSc7IC8vID9kb3dubG9hZD0xIHNhdmVzIHRoZSBzdGFnZWQgc2hvdCBhcyBhIFBORyBmaWxlCmNvbnN0IHNlZWQgPSBOdW1iZXIocGFyYW1zLmdldCgnc2VlZCcpIHx8IDEpOwpsZXQgc2VlZFN0YXRlID0gc2VlZCAqIDI2NTQ0MzU3NjEgPj4+IDA7Ck1hdGgucmFuZG9tID0gKCkgPT4geyBzZWVkU3RhdGUgPSAoc2VlZFN0YXRlICogMTY2NDUyNSArIDEwMTM5MDQyMjMpID4+PiAwOyByZXR1cm4gc2VlZFN0YXRlIC8gNDI5NDk2NzI5NjsgfTsKCmNvbnN0IHN0YXRlID0gZnJlc2hTdGF0ZSgpOwpzdGF0ZS5zaG90TW9kZSA9IHNob3RNb2RlOwpzdGF0ZS5zZWVkID0gc2VlZDsKCmNvbnN0IHJlbmRlcmVyID0gbmV3IFRIUkVFLldlYkdMUmVuZGVyZXIoeyBhbnRpYWxpYXM6IHRydWUsIHByZXNlcnZlRHJhd2luZ0J1ZmZlcjogdHJ1ZSB9KTsKcmVuZGVyZXIuc2V0U2l6ZShpbm5lcldpZHRoLCBpbm5lckhlaWdodCk7CnJlbmRlcmVyLnNldFBpeGVsUmF0aW8oTWF0aC5taW4oZGV2aWNlUGl4ZWxSYXRpbywgMikpOwpyZW5kZXJlci5zaGFkb3dNYXAuZW5hYmxlZCA9IHRydWU7CnJlbmRlcmVyLnNoYWRvd01hcC50eXBlID0gVEhSRUUuUENGU29mdFNoYWRvd01hcDsKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2dhbWUnKS5hcHBlbmRDaGlsZChyZW5kZXJlci5kb21FbGVtZW50KTsKCmNvbnN0IHNjZW5lID0gbmV3IFRIUkVFLlNjZW5lKCk7CmNvbnN0IGNhbWVyYSA9IG5ldyBUSFJFRS5QZXJzcGVjdGl2ZUNhbWVyYSg3OCwgaW5uZXJXaWR0aCAvIGlubmVySGVpZ2h0LCAwLjA4LCAyMjApOwpjb25zdCB3b3JsZCA9IGNyZWF0ZVdvcmxkKHNjZW5lKTsKY29uc3QgYXVkaW8gPSBjcmVhdGVBdWRpbygpOwpjb25zdCBwbGF5ZXIgPSBjcmVhdGVQbGF5ZXIoc2NlbmUsIGNhbWVyYSwgd29ybGQsIHN0YXRlKTsKc3RhdGUucGxheWVyID0gcGxheWVyOwpjb25zdCBodWQgPSBjcmVhdGVIdWQoc3RhdGUsIHsgb25CdXk6IChpZCkgPT4gYnV5SXRlbShwbGF5ZXIsIHN0YXRlLCBpZCwgYXVkaW8pIH0pOwoKbGV0IGJvdEN0eCA9IG51bGw7CgpmdW5jdGlvbiBjbGVhckJvdHMoKSB7CiAgZm9yIChjb25zdCBiIG9mIHN0YXRlLmJvdHMpIHNjZW5lLnJlbW92ZShiLmdyb3VwKTsKICBzdGF0ZS5ib3RzID0gW107Cn0KCmZ1bmN0aW9uIHN0YXJ0Um91bmQoKSB7CiAgY2xlYXJCb3RzKCk7CiAgcmVzZXRQbGF5ZXIocGxheWVyLCBzdGF0ZSk7CiAgc3RhdGUuZ3JlbmFkZXMgPSBbXTsKICBzdGF0ZS5zcGlrZSA9IHsgc3RhdGU6ICdjYXJyaWVkJywgc2l0ZTogbnVsbCwgcHJvZ3Jlc3M6IDAsIGZ1c2U6IDAsIHBvczogbnVsbCB9OwogIHN0YXRlLnBoYXNlID0gJ2J1eSc7CiAgc3RhdGUucGhhc2VUID0gMDsKICBzdGF0ZS50aW1lciA9IEJVWV9USU1FOwogIC8vIDIgYWxseSBib3RzIHB1c2ggd2l0aCB0aGUgcGxheWVyOyA0IGRlZmVuZGVycyBob2xkIHRoZSBzaXRlcy4KICBjb25zdCBhbGxpZXMgPSBzcGF3bkJvdHMoc2NlbmUsIHdvcmxkLCBzdGF0ZSwgMiwgJ2F0dGFjaycsICdyaWZsZScpOwogIGNvbnN0IGVuZW1pZXMgPSBzcGF3bkJvdHMoc2NlbmUsIHdvcmxkLCBzdGF0ZSwgNCwgJ2RlZmVuZCcsICdyaWZsZScpOwogIHN0YXRlLmJvdHMgPSBbLi4uYWxsaWVzLCAuLi5lbmVtaWVzXTsKICBib3RDdHggPSB7IHN0YXRlLCB3b3JsZCwgcGxheWVyLCBhdWRpbywgc2NlbmUsIG9uS2lsbCwgb25QbGFudCB9OwogIGh1ZC5oaWRlQmFubmVyKCk7CiAgaHVkLnJlbmRlckJ1eSgpOwogIGh1ZC5zaG93T3ZlcmxheSgKICAgIGBTQU5ETElORSBQUk9UT0NPTCDigJQgUm91bmQgJHtzdGF0ZS5yb3VuZH1gLAogICAgJ0J1eSBwaGFzZS4gU3BlbmQgeW91ciBtb25leSwgdGhlbiB0aGUgcm91bmQgc3RhcnRzLiBQbGFudCB0aGUgc3Bpa2UgYXQgRm91bmRyeSAoQSkgb3IgRGVwb3QgKEIpLCBvciBlbGltaW5hdGUgYWxsIGZvdXIgZGVmZW5kZXJzLicsCiAgICAnQ2xpY2sgdG8gcGxheScsCiAgKTsKfQoKZnVuY3Rpb24gYmVnaW5MaXZlKCkgewogIHN0YXRlLnBoYXNlID0gJ2xpdmUnOwogIHN0YXRlLnBoYXNlVCA9IDA7CiAgc3RhdGUudGltZXIgPSBST1VORF9USU1FOwogIGh1ZC5oaWRlT3ZlcmxheSgpOwogIGh1ZC5oaWRlQmFubmVyKCk7CiAgaHVkLmJhbm5lcihgUk9VTkQgJHtzdGF0ZS5yb3VuZH0g4oCUIEdPYCwgJ1BsYW50IHRoZSBzcGlrZSBvciBlbGltaW5hdGUgdGhlIGRlZmVuZGVycycsIDIyMDApOwogIGRvY3VtZW50LmJvZHkucmVxdWVzdFBvaW50ZXJMb2NrPy4oKTsKfQoKZnVuY3Rpb24gZW5kUm91bmQod2lubmVyLCByZWFzb24pIHsKICBpZiAoc3RhdGUucGhhc2UgPT09ICdyb3VuZEVuZCcgfHwgc3RhdGUucGhhc2UgPT09ICdtYXRjaEVuZCcpIHJldHVybjsKICBzdGF0ZS5waGFzZSA9ICdyb3VuZEVuZCc7CiAgc3RhdGUucGhhc2VUID0gMDsKICBzdGF0ZS53aW5uZXIgPSB3aW5uZXI7CiAgY29uc3Qgd29uID0gd2lubmVyID09PSAnYXR0YWNrJzsKICBpZiAod29uKSB7IHN0YXRlLm1vbmV5ICs9IFJPVU5EX1dJTl9SRVdBUkQ7IHN0YXRlLnNjb3JlLmF0dGFjaysrOyBhdWRpby5yb3VuZFdpbigpOyB9CiAgZWxzZSB7IHN0YXRlLm1vbmV5ICs9IFJPVU5EX0xPU1NfUkVXQVJEOyBzdGF0ZS5zY29yZS5kZWZlbmQrKzsgYXVkaW8ucm91bmRMb3NlKCk7IH0KICBodWQuYmFubmVyKHdvbiA/ICdST1VORCBXT04nIDogJ1JPVU5EIExPU1QnLCByZWFzb24sIDApOwogIGh1ZC5mZWVkKGAke3dvbiA/ICdBdHRhY2tlcnMgdGFrZScgOiAnRGVmZW5kZXJzIGhvbGQnfSByb3VuZCAke3N0YXRlLnJvdW5kfSDigJQgJHtyZWFzb259YCwgd29uKTsKICBkb2N1bWVudC5leGl0UG9pbnRlckxvY2s/LigpOwp9CgpmdW5jdGlvbiBlbmRNYXRjaCgpIHsKICBzdGF0ZS5waGFzZSA9ICdtYXRjaEVuZCc7CiAgY29uc3QgYSA9IHN0YXRlLnNjb3JlLmF0dGFjaywgZCA9IHN0YXRlLnNjb3JlLmRlZmVuZDsKICBzdGF0ZS5tYXRjaFdpbm5lciA9IGEgPiBkID8gJ2F0dGFjaycgOiBkID4gYSA/ICdkZWZlbmQnIDogJ2RyYXcnOwogIGNvbnN0IHRpdGxlID0gc3RhdGUubWF0Y2hXaW5uZXIgPT09ICdhdHRhY2snID8gJ01BVENIIFdPTiDigJQgU0FORExJTkUgSVMgWU9VUlMnCiAgICA6IHN0YXRlLm1hdGNoV2lubmVyID09PSAnZGVmZW5kJyA/ICdNQVRDSCBMT1NUJyA6ICdNQVRDSCBEUkFXTic7CiAgaHVkLnNob3dPdmVybGF5KHRpdGxlLCBgRmluYWwgc2NvcmUg4oCUIEF0dGFja2VycyAke2F9IDogJHtkfSBEZWZlbmRlcnMuIEtpbGxzICR7c3RhdGUuc3RhdHMua2lsbHN9IMK3IFBsYW50cyAke3N0YXRlLnN0YXRzLnBsYW50c30gwrcgQWNjdXJhY3kgJHthY2N1cmFjeSgpfSUuYCwgJ1BsYXkgYWdhaW4nKTsKfQoKZnVuY3Rpb24gYWNjdXJhY3koKSB7CiAgY29uc3QgcyA9IHN0YXRlLnN0YXRzOwogIHJldHVybiBzLnNob3RzID8gTWF0aC5yb3VuZCgocy5oaXRzIC8gcy5zaG90cykgKiAxMDApIDogMDsKfQoKZnVuY3Rpb24gb25LaWxsKHZpY3RpbSwga2lsbGVyLCBob3cpIHsKICBjb25zdCBrbiA9IGtpbGxlci5pc1BsYXllciA/ICdZb3UnIDoga2lsbGVyLm5hbWU7CiAgY29uc3Qgdm4gPSB2aWN0aW0uaXNQbGF5ZXIgPyAnWW91JyA6IHZpY3RpbS5uYW1lOwogIGh1ZC5mZWVkKGAke2tufSAke2hvdyA9PT0gJ2hlYWRzaG90JyA/ICfimKAnIDogJ+KWuCd9ICR7dm59JHtob3cgPT09ICdoZWFkc2hvdCcgPyAnIChoZWFkc2hvdCknIDogJyd9YCwga2lsbGVyLmlzUGxheWVyKTsKICBpZiAodmljdGltLmlzUGxheWVyKSB7IHN0YXRlLnN0YXRzLmRlYXRocysrOyB9Cn0KCmZ1bmN0aW9uIG9uUGxhbnQoa2luZCwgd2hvKSB7CiAgaWYgKGtpbmQgPT09ICdwbGFudGVkJykgewogICAgaHVkLmJhbm5lcignU1BJS0UgUExBTlRFRCcsIGBEZXRvbmF0aW9uIGluIDI1IHMg4oCUIGRlZmVuZCBTaXRlICR7c3RhdGUuc3Bpa2Uuc2l0ZX1gLCAzMDAwKTsKICAgIGh1ZC5mZWVkKGBZb3UgcGxhbnRlZCB0aGUgc3Bpa2UgYXQgU2l0ZSAke3N0YXRlLnNwaWtlLnNpdGV9YCwgdHJ1ZSk7CiAgICBhdWRpby5wbGFudEJlZXAoKTsKICB9IGVsc2UgaWYgKGtpbmQgPT09ICdkZWZ1c2VkJykgewogICAgZW5kUm91bmQoJ2RlZmVuZCcsICdTcGlrZSBkZWZ1c2VkIGJ5IHRoZSBkZWZlbmRlcnMnKTsKICB9Cn0KCmZ1bmN0aW9uIGNoZWNrUm91bmRFbmQoKSB7CiAgaWYgKHN0YXRlLnBoYXNlICE9PSAnbGl2ZScpIHJldHVybjsKICBjb25zdCBhbGl2ZUVuZW1pZXMgPSBzdGF0ZS5ib3RzLmZpbHRlcigoYikgPT4gYi50ZWFtID09PSAnZGVmZW5kJyAmJiBiLmhwID4gMCk7CiAgY29uc3QgYWxpdmVBbGxpZXMgPSBzdGF0ZS5ib3RzLmZpbHRlcigoYikgPT4gYi50ZWFtID09PSAnYXR0YWNrJyAmJiBiLmhwID4gMCk7CiAgaWYgKGFsaXZlRW5lbWllcy5sZW5ndGggPT09IDApIGVuZFJvdW5kKCdhdHRhY2snLCAnQWxsIGRlZmVuZGVycyBlbGltaW5hdGVkJyk7CiAgZWxzZSBpZiAocGxheWVyLmhwIDw9IDAgJiYgYWxpdmVBbGxpZXMubGVuZ3RoID09PSAwKSBlbmRSb3VuZCgnZGVmZW5kJywgJ0F0dGFja2VycyBlbGltaW5hdGVkJyk7CiAgZWxzZSBpZiAoc3RhdGUudGltZXIgPD0gMCkgZW5kUm91bmQoJ2RlZmVuZCcsICdUaW1lIGV4cGlyZWQg4oCUIHNwaWtlIG5ldmVyIGRldG9uYXRlZCcpOwp9CgovLyBGaXhlZC1zdGVwIHNpbXVsYXRpb24uCmNvbnN0IFNURVAgPSAxIC8gNjA7CmxldCBhY2MgPSAwOwpsZXQgbGFzdCA9IHBlcmZvcm1hbmNlLm5vdygpOwpsZXQgc2hvdEZyYW1lcyA9IDA7CmxldCBkb3dubG9hZGVkU2hvdCA9IGZhbHNlOwoKZnVuY3Rpb24gc2ltU3RlcChkdCkgewogIHN0YXRlLnRpbWUgKz0gZHQ7CiAgaWYgKHN0YXRlLnBoYXNlID09PSAnYnV5JykgewogICAgc3RhdGUucGhhc2VUICs9IGR0OwogICAgc3RhdGUudGltZXIgPSBNYXRoLm1heCgwLCBCVVlfVElNRSAtIHN0YXRlLnBoYXNlVCk7CiAgICBpZiAoc3RhdGUucGhhc2VUID49IEJVWV9USU1FKSBiZWdpbkxpdmUoKTsKICB9IGVsc2UgaWYgKHN0YXRlLnBoYXNlID09PSAnbGl2ZScpIHsKICAgIHN0YXRlLnBoYXNlVCArPSBkdDsKICAgIHN0YXRlLnRpbWVyID0gTWF0aC5tYXgoMCwgUk9VTkRfVElNRSAtIHN0YXRlLnBoYXNlVCk7CiAgICBjb25zdCBzcCA9IHN0YXRlLnNwaWtlOwogICAgaWYgKHNwLnN0YXRlID09PSAncGxhbnRlZCcpIHsKICAgICAgc3AuZnVzZSAtPSBkdDsKICAgICAgaWYgKHNwLmZ1c2UgPD0gMCkgeyBzcC5zdGF0ZSA9ICdkZXRvbmF0ZWQnOyBlbmRSb3VuZCgnYXR0YWNrJywgJ1NwaWtlIGRldG9uYXRlZCcpOyB9CiAgICB9CiAgICBpZiAoc3Auc3RhdGUgPT09ICdkZWZ1c2luZycgJiYgIXN0YXRlLmJvdHMuc29tZSgoYikgPT4gYi5kZWZ1c2luZyAmJiBiLmhwID4gMCkpIHsKICAgICAgc3Auc3RhdGUgPSAncGxhbnRlZCc7IHNwLnByb2dyZXNzID0gMDsgLy8gZGVmdXNlciBkaWVkIG9yIHdhbGtlZCBvZmYKICAgIH0KICAgIGlmIChzdGF0ZS5waGFzZSA9PT0gJ2xpdmUnKSB7CiAgICAgIHVwZGF0ZVBsYXllcihwbGF5ZXIsIGR0LCB7IHN0YXRlLCB3b3JsZCwgY2FtZXJhLCBhdWRpbywgc2NlbmUsIG9uS2lsbCwgb25QbGFudCwgb25IaXRtYXJrZXI6IChoKSA9PiBodWQuc2hvd0hpdG1hcmtlcihoKSwgcGxhbnRpbmc6IGZhbHNlIH0pOwogICAgICBmb3IgKGNvbnN0IGIgb2Ygc3RhdGUuYm90cykgdXBkYXRlQm90KGIsIGR0LCBib3RDdHgpOwogICAgICBmb3IgKGxldCBpID0gc3RhdGUuZ3JlbmFkZXMubGVuZ3RoIC0gMTsgaSA+PSAwOyBpLS0pIHsKICAgICAgICBpZiAoc3RlcEdyZW5hZGUoc3RhdGUuZ3JlbmFkZXNbaV0sIGR0LCB3b3JsZC5jb2xsaWRlcnMsIFtwbGF5ZXIsIC4uLnN0YXRlLmJvdHNdLCBzdGF0ZSwgYXVkaW8sIG9uS2lsbCkpIHsKICAgICAgICAgIHNjZW5lLnJlbW92ZShzdGF0ZS5ncmVuYWRlc1tpXS5tZXNoKTsKICAgICAgICAgIHNjZW5lLnJlbW92ZShzdGF0ZS5ncmVuYWRlc1tpXS5saWdodCk7CiAgICAgICAgICBzdGF0ZS5ncmVuYWRlcy5zcGxpY2UoaSwgMSk7CiAgICAgICAgfQogICAgICB9CiAgICAgIGNoZWNrUm91bmRFbmQoKTsKICAgIH0KICB9IGVsc2UgaWYgKHN0YXRlLnBoYXNlID09PSAncm91bmRFbmQnKSB7CiAgICBzdGF0ZS5waGFzZVQgKz0gZHQ7CiAgICBpZiAoc3RhdGUucGhhc2VUID49IDQpIHsKICAgICAgaWYgKHN0YXRlLnNjb3JlLmF0dGFjayA+PSBXSU5fUk9VTkRTIHx8IHN0YXRlLnNjb3JlLmRlZmVuZCA+PSBXSU5fUk9VTkRTIHx8IHN0YXRlLnJvdW5kID49IE1BWF9ST1VORFMpIGVuZE1hdGNoKCk7CiAgICAgIGVsc2UgeyBzdGF0ZS5yb3VuZCsrOyBzdGFydFJvdW5kKCk7IH0KICAgIH0KICB9CiAgLy8gU2l0ZSByaW5nIHB1bHNlLgogIGZvciAoY29uc3Qga2V5IG9mIFsnQScsICdCJ10pIHsKICAgIGNvbnN0IG0gPSB3b3JsZC5zaXRlTWVzaGVzW2tleV07CiAgICBjb25zdCBhY3RpdmUgPSBzdGF0ZS5zcGlrZS5zdGF0ZSA9PT0gJ3BsYW50ZWQnICYmIHN0YXRlLnNwaWtlLnNpdGUgPT09IGtleTsKICAgIG0ucmluZy5tYXRlcmlhbC5vcGFjaXR5ID0gYWN0aXZlID8gMC42ICsgMC40ICogTWF0aC5zaW4oc3RhdGUudGltZSAqIDYpIDogMC44NTsKICB9Cn0KCmZ1bmN0aW9uIGZyYW1lKG5vdykgewogIHJlcXVlc3RBbmltYXRpb25GcmFtZShmcmFtZSk7CiAgbGV0IGR0ID0gKG5vdyAtIGxhc3QpIC8gMTAwMDsKICBsYXN0ID0gbm93OwogIGlmIChkdCA+IDAuMjUpIGR0ID0gMC4yNTsKICBpZiAoIXNob3RNb2RlKSB7IC8vIHNjcmVlbnNob3QgbW9kZXMgZnJlZXplIHRoZSBzdGFnZWQgc3RhdGUgZXhhY3RseQogICAgYWNjICs9IGR0OwogICAgd2hpbGUgKGFjYyA+PSBTVEVQKSB7IHNpbVN0ZXAoU1RFUCk7IGFjYyAtPSBTVEVQOyB9CiAgfSBlbHNlIHsgYWNjID0gMDsgfQogIGh1ZC51cGRhdGUoZHQpOwogIHJlbmRlcmVyLnJlbmRlcihzY2VuZSwgY2FtZXJhKTsKICAvLyBTY3JlZW5zaG90IGRvd25sb2FkOiBhZnRlciBhIGZldyBmcmFtZXMgc28gc2hhZG93cyBoYXZlIHNldHRsZWQsIHByZXBhcmUKICAvLyB0aGUgc3RhZ2VkIHNob3QgYXMgYSBQTkcgb24gYSB2aXNpYmxlIGRvd25sb2FkIGxpbmsgKHJlYWwgPGEgZG93bmxvYWQ+LAogIC8vIHNvIHRoZSBicm93c2VyIGNhbiBzYXZlIGl0IGZyb20gYSBjbGljayDigJQgYXV0by1kb3dubG9hZHMgd2l0aG91dCBhIHVzZXIKICAvLyBnZXN0dXJlIGFyZSBibG9ja2VkKS4gVGhlIGxpbmsgaG9sZHMgb25seSB0aGUgM0QgY2FudmFzIChubyBET00gSFVEKS4KICBpZiAoc2hvdE1vZGUgJiYgZG93bmxvYWRTaG90ICYmICFkb3dubG9hZGVkU2hvdCkgewogICAgaWYgKCF3aW5kb3cuX19zaG90TGluaykgewogICAgICBjb25zdCBuYW1lcyA9IHsgc3RhcnQ6ICcxLXN0YXJ0LnBuZycsIHBsYXk6ICcyLXBsYXkucG5nJywgZW5kOiAnMy1lbmQucG5nJyB9OwogICAgICBjb25zdCBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnYScpOwogICAgICBhLmlkID0gJ3Nob3QtZG93bmxvYWQnOwogICAgICBhLnRleHRDb250ZW50ID0gJ+KshyBEb3dubG9hZCBzY3JlZW5zaG90IFBORyc7CiAgICAgIGEuaHJlZiA9ICcjJzsKICAgICAgYS5kb3dubG9hZCA9IG5hbWVzW3Nob3RNb2RlXSB8fCBgJHtzaG90TW9kZX0ucG5nYDsKICAgICAgYS5zdHlsZS5jc3NUZXh0ID0gJ3Bvc2l0aW9uOmZpeGVkO3RvcDoxMnB4O3JpZ2h0OjEycHg7ei1pbmRleDo5OTk5OTtwYWRkaW5nOjEwcHggMTRweDtmb250OjYwMCAxNHB4IHN5c3RlbS11aSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6I2Y1OWUwYjtjb2xvcjojMTExO2JvcmRlcjowO2JvcmRlci1yYWRpdXM6OHB4O2N1cnNvcjpwb2ludGVyO3RleHQtZGVjb3JhdGlvbjpub25lOyc7CiAgICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7CiAgICAgIHdpbmRvdy5fX3Nob3RMaW5rID0gYTsKICAgIH0KICAgIGlmICgrK3Nob3RGcmFtZXMgPj0gNSkgewogICAgICBkb3dubG9hZGVkU2hvdCA9IHRydWU7CiAgICAgIHJlbmRlcmVyLmRvbUVsZW1lbnQudG9CbG9iKChibG9iKSA9PiB7CiAgICAgICAgaWYgKCFibG9iKSByZXR1cm47CiAgICAgICAgd2luZG93Ll9fc2hvdExpbmsuaHJlZiA9IFVSTC5jcmVhdGVPYmplY3RVUkwoYmxvYik7CiAgICAgIH0sICdpbWFnZS9wbmcnKTsKICAgIH0KICB9Cn0KCi8vIElucHV0LgphZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgKGUpID0+IHsKICBpZiAoZS5yZXBlYXQpIHJldHVybjsKICBwbGF5ZXIua2V5c1tlLmNvZGVdID0gdHJ1ZTsKICBpZiAoZS5jb2RlID09PSAnS2V5UicpIHJlbG9hZChwbGF5ZXIsIGF1ZGlvKTsKICBpZiAoZS5jb2RlID09PSAnS2V5RycpIHRocm93R3JlbmFkZShwbGF5ZXIsIDAsIHsgc3RhdGUsIHNjZW5lLCBjYW1lcmEsIGF1ZGlvIH0pOwogIGlmIChlLmNvZGUgPT09ICdLZXlCJyAmJiBzdGF0ZS5waGFzZSA9PT0gJ2J1eScpIGh1ZC5yZW5kZXJCdXkoKTsKICBpZiAoZS5jb2RlID09PSAnRGlnaXQxJykgZXF1aXBXZWFwb24ocGxheWVyLCAncGlzdG9sJywgdHJ1ZSk7CiAgaWYgKGUuY29kZSA9PT0gJ0RpZ2l0MicgJiYgV0VBUE9OUy5zbWcgJiYgcGxheWVySGFzKCdzbWcnKSkgZXF1aXBXZWFwb24ocGxheWVyLCAnc21nJywgdHJ1ZSk7CiAgaWYgKGUuY29kZSA9PT0gJ0RpZ2l0MycgJiYgcGxheWVySGFzKCdyaWZsZScpKSBlcXVpcFdlYXBvbihwbGF5ZXIsICdyaWZsZScsIHRydWUpOwogIGlmIChlLmNvZGUgPT09ICdEaWdpdDQnICYmIHBsYXllckhhcygnc25pcGVyJykpIGVxdWlwV2VhcG9uKHBsYXllciwgJ3NuaXBlcicsIHRydWUpOwogIGlmIChlLmNvZGUgPT09ICdFbnRlcicgJiYgc3RhdGUucGhhc2UgPT09ICdtYXRjaEVuZCcpIHsgc3RhdGUucm91bmQgPSAxOyBzdGF0ZS5zY29yZSA9IHsgYXR0YWNrOiAwLCBkZWZlbmQ6IDAgfTsgc3RhdGUubW9uZXkgPSA4MDA7IHN0YXJ0Um91bmQoKTsgfQp9KTsKYWRkRXZlbnRMaXN0ZW5lcigna2V5dXAnLCAoZSkgPT4geyBwbGF5ZXIua2V5c1tlLmNvZGVdID0gZmFsc2U7IH0pOwphZGRFdmVudExpc3RlbmVyKCdtb3VzZWRvd24nLCAoZSkgPT4gewogIGlmIChlLmJ1dHRvbiA9PT0gMCAmJiBkb2N1bWVudC5wb2ludGVyTG9ja0VsZW1lbnQpIHsgcGxheWVyLm1vdXNlRG93biA9IHRydWU7IGF1ZGlvLnVubG9jaygpOyB9Cn0pOwphZGRFdmVudExpc3RlbmVyKCdtb3VzZXVwJywgKGUpID0+IHsgaWYgKGUuYnV0dG9uID09PSAwKSBwbGF5ZXIubW91c2VEb3duID0gZmFsc2U7IH0pOwphZGRFdmVudExpc3RlbmVyKCdtb3VzZW1vdmUnLCAoZSkgPT4gewogIGlmICghZG9jdW1lbnQucG9pbnRlckxvY2tFbGVtZW50KSByZXR1cm47CiAgcGxheWVyLnlhdyAtPSBlLm1vdmVtZW50WCAqIDAuMDAyMTsKICBwbGF5ZXIucGl0Y2ggLT0gZS5tb3ZlbWVudFkgKiAwLjAwMjE7CiAgcGxheWVyLnBpdGNoID0gTWF0aC5tYXgoLTEuNSwgTWF0aC5taW4oMS41LCBwbGF5ZXIucGl0Y2gpKTsKfSk7CmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwbGF5JykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9PiB7CiAgYXVkaW8udW5sb2NrKCk7CiAgaWYgKHN0YXRlLnBoYXNlID09PSAnbWVudScpIHsgc3RhdGUucm91bmQgPSAxOyBzdGF0ZS5zY29yZSA9IHsgYXR0YWNrOiAwLCBkZWZlbmQ6IDAgfTsgc3RhdGUubW9uZXkgPSA4MDA7IHN0YXJ0Um91bmQoKTsgfQogIGVsc2UgaWYgKHN0YXRlLnBoYXNlID09PSAnbWF0Y2hFbmQnKSB7IHN0YXRlLnJvdW5kID0gMTsgc3RhdGUuc2NvcmUgPSB7IGF0dGFjazogMCwgZGVmZW5kOiAwIH07IHN0YXRlLm1vbmV5ID0gODAwOyBzdGFydFJvdW5kKCk7IH0KICBlbHNlIGlmIChzdGF0ZS5waGFzZSA9PT0gJ2J1eScpIHsgYmVnaW5MaXZlKCk7IH0KfSk7CmFkZEV2ZW50TGlzdGVuZXIoJ3Jlc2l6ZScsICgpID0+IHsKICBjYW1lcmEuYXNwZWN0ID0gaW5uZXJXaWR0aCAvIGlubmVySGVpZ2h0OwogIGNhbWVyYS51cGRhdGVQcm9qZWN0aW9uTWF0cml4KCk7CiAgcmVuZGVyZXIuc2V0U2l6ZShpbm5lcldpZHRoLCBpbm5lckhlaWdodCk7Cn0pOwoKLy8gT3duZWQgd2VhcG9ucyBhcmUgdHJhY2tlZCBieSB0aGUgYnV5IG1lbnU6IGEgd2VhcG9uIGNvdW50cyBhcyBvd25lZCBvbmNlCi8vIGJvdWdodCB0aGlzIG1hdGNoLiAoUGlzdG9sIGlzIGFsd2F5cyBvd25lZC4pCmNvbnN0IG93bmVkID0gbmV3IFNldChbJ3Bpc3RvbCddKTsKZnVuY3Rpb24gcGxheWVySGFzKGlkKSB7IHJldHVybiBvd25lZC5oYXMoaWQpIHx8IHBsYXllci53ZWFwb25JZCA9PT0gaWQ7IH0KLy8gUmVjb3JkIG93bmVyc2hpcCB3aGVuIGEgYnV5IGJ1dHRvbiBpcyBjbGlja2VkLgpkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIChlKSA9PiB7CiAgY29uc3QgYiA9IGUudGFyZ2V0LmNsb3Nlc3QoJ1tkYXRhLWJ1eV0nKTsKICBpZiAoYiAmJiBXRUFQT05TW2IuZGF0YXNldC5idXldKSBvd25lZC5hZGQoYi5kYXRhc2V0LmJ1eSk7Cn0pOwoKLy8gLS0tLSBTY3JlZW5zaG90IG1vZGVzOiBkZXRlcm1pbmlzdGljIHN0YXRlcywgbm8gcG9pbnRlciBsb2NrIG5lZWRlZC4gLS0tLQpmdW5jdGlvbiBhcHBseVNob3RNb2RlKCkgewogIGlmICghc2hvdE1vZGUpIHJldHVybjsKICBpZiAoc2hvdE1vZGUgPT09ICdzdGFydCcpIHsKICAgIHN0YXRlLnBoYXNlID0gJ21lbnUnOwogICAgaHVkLnNob3dPdmVybGF5KAogICAgICAnU0FORExJTkUgUFJPVE9DT0wnLAogICAgICAnQSByb3VuZC1iYXNlZCB0YWN0aWNhbCBGUFMuIFR3byB0ZWFtcywgc2hvcnQgcm91bmRzLCBtb25leSBiZXR3ZWVuIHJvdW5kcy4gUGxhbnQgdGhlIHNwaWtlIGF0IEZvdW5kcnkgKEEpIG9yIERlcG90IChCKSDigJQgb3IgZWxpbWluYXRlIGFsbCBmb3VyIGRlZmVuZGVycy4gRmlyc3QgdG8gNSByb3VuZHMgdGFrZXMgdGhlIG1hdGNoLicsCiAgICAgICdDbGljayB0byBwbGF5JywKICAgICk7CiAgICBwbGF5ZXIueCA9IDA7IHBsYXllci56ID0gLTE0OyBwbGF5ZXIueWF3ID0gMDsgcGxheWVyLnBpdGNoID0gLTAuMDI7CiAgICBjYW1lcmEucG9zaXRpb24uc2V0KDAsIDEuNjIsIC0xNCk7CiAgICBjYW1lcmEucm90YXRpb24uc2V0KC0wLjAyLCAwLCAwLCAnWVhaJyk7CiAgfSBlbHNlIGlmIChzaG90TW9kZSA9PT0gJ3BsYXknKSB7CiAgICBzdGFydFJvdW5kKCk7CiAgICBiZWdpbkxpdmUoKTsKICAgIC8vIFN0YWdlIHRoZSBzaG90OiBwbGF5ZXIgbWlkLWxhbmUsIHR3byBkZWZlbmRlcnMgaW4gdGhlIHNpZ2h0bGluZS4KICAgIHBsYXllci54ID0gMDsgcGxheWVyLnogPSAtNjsgcGxheWVyLnlhdyA9IDAuMTU7IHBsYXllci5waXRjaCA9IDA7CiAgICBjYW1lcmEucG9zaXRpb24uc2V0KDAsIDEuNjIsIC02KTsKICAgIGNhbWVyYS5yb3RhdGlvbi5zZXQoMCwgMC4xNSwgMCwgJ1lYWicpOwogICAgY29uc3QgZGVmcyA9IHN0YXRlLmJvdHMuZmlsdGVyKChiKSA9PiBiLnRlYW0gPT09ICdkZWZlbmQnKTsKICAgIGlmIChkZWZzWzBdKSB7IGRlZnNbMF0ueCA9IC0yOyBkZWZzWzBdLnogPSA0OyBkZWZzWzBdLmdyb3VwLnBvc2l0aW9uLnNldCgtMiwgMCwgNCk7IGRlZnNbMF0ueWF3ID0gTWF0aC5QSTsgfQogICAgaWYgKGRlZnNbMV0pIHsgZGVmc1sxXS54ID0gMzsgZGVmc1sxXS56ID0gNzsgZGVmc1sxXS5ncm91cC5wb3NpdGlvbi5zZXQoMywgMCwgNyk7IGRlZnNbMV0ueWF3ID0gTWF0aC5QSTsgfQogICAgY29uc3QgYWxsaWVzID0gc3RhdGUuYm90cy5maWx0ZXIoKGIpID0+IGIudGVhbSA9PT0gJ2F0dGFjaycpOwogICAgaWYgKGFsbGllc1swXSkgeyBhbGxpZXNbMF0ueCA9IC0zOyBhbGxpZXNbMF0ueiA9IC05OyBhbGxpZXNbMF0uZ3JvdXAucG9zaXRpb24uc2V0KC0zLCAwLCAtOSk7IH0KICAgIGh1ZC5mZWVkKCdZb3Ug4pa4IFZleCcsIHRydWUpOwogICAgaHVkLmZlZWQoJ01hcmEg4pa4IFJvb2snLCBmYWxzZSk7CiAgICBodWQuaGlkZUJhbm5lcigpOwogICAgLy8gRmlyZSBvbmUgdHJhY2VyIHNvIHRoZSBmcmFtZSByZWFkcyBhcyBtaWQtY29tYmF0LgogICAgcGxheWVyLm1vdXNlRG93biA9IGZhbHNlOwogIH0gZWxzZSBpZiAoc2hvdE1vZGUgPT09ICdlbmQnKSB7CiAgICBzdGFydFJvdW5kKCk7CiAgICBiZWdpbkxpdmUoKTsKICAgIHN0YXRlLnNjb3JlLmF0dGFjayA9IDM7IHN0YXRlLnNjb3JlLmRlZmVuZCA9IDI7CiAgICBzdGF0ZS5zcGlrZSA9IHsgc3RhdGU6ICdwbGFudGVkJywgc2l0ZTogJ0EnLCBwcm9ncmVzczogMCwgZnVzZTogMTgsIHBvczogWy0xMywgOF0gfTsKICAgIGh1ZC5iYW5uZXIoJ1NQSUtFIFBMQU5URUQnLCAnRGV0b25hdGlvbiBpbiAxOCBzIOKAlCBkZWZlbmQgU2l0ZSBBIChGb3VuZHJ5KScsIDApOwogICAgcGxheWVyLnggPSAtODsgcGxheWVyLnogPSAyOyBwbGF5ZXIueWF3ID0gLTAuOTsgcGxheWVyLnBpdGNoID0gMC4wMjsKICAgIGNhbWVyYS5wb3NpdGlvbi5zZXQoLTgsIDEuNjIsIDIpOwogICAgY2FtZXJhLnJvdGF0aW9uLnNldCgwLjAyLCAtMC45LCAwLCAnWVhaJyk7CiAgfQp9CgovLyBCb290LgppZiAoc2hvdE1vZGUpIHsKICBhcHBseVNob3RNb2RlKCk7CiAgLy8gSW4gc2hvdCBtb2RlcyB0aGUgZml4ZWQtc3RlcCBsb29wIHdvdWxkIGFkdmFuY2UgdGhlIHJvdW5kOyBmcmVlemUgdGhlCiAgLy8gc2ltdWxhdGlvbiBjbG9jayBzbyB0aGUgc2NyZWVuc2hvdCBzdGF0ZSBzdGF5cyBleGFjdGx5IGFzIHN0YWdlZC4KICBpZiAoc2hvdE1vZGUgPT09ICdwbGF5JyB8fCBzaG90TW9kZSA9PT0gJ2VuZCcpIHN0YXRlLnBoYXNlID0gJ2xpdmUnOwogIGlmIChzaG90TW9kZSA9PT0gJ3N0YXJ0Jykgc3RhdGUucGhhc2UgPSAnbWVudSc7Cn0gZWxzZSB7CiAgaHVkLnNob3dPdmVybGF5KAogICAgJ1NBTkRMSU5FIFBST1RPQ09MJywKICAgICdBIHJvdW5kLWJhc2VkIHRhY3RpY2FsIEZQUy4gVHdvIHRlYW1zLCBzaG9ydCByb3VuZHMsIG1vbmV5IGJldHdlZW4gcm91bmRzLiBQbGFudCB0aGUgc3Bpa2UgYXQgRm91bmRyeSAoQSkgb3IgRGVwb3QgKEIpIOKAlCBvciBlbGltaW5hdGUgYWxsIGZvdXIgZGVmZW5kZXJzLiBGaXJzdCB0byA1IHJvdW5kcyB0YWtlcyB0aGUgbWF0Y2guJywKICAgICdDbGljayB0byBwbGF5JywKICApOwogIHBsYXllci54ID0gMDsgcGxheWVyLnogPSAtMTQ7CiAgY2FtZXJhLnBvc2l0aW9uLnNldCgwLCAxLjYyLCAtMTQpOwp9CnJlcXVlc3RBbmltYXRpb25GcmFtZShmcmFtZSk7Cg==
+// main.js — bootstrap and the round state machine. Simulation runs on a
+// fixed 1/60 s step kept apart from rendering; the renderer only draws.
+// Flow: menu → buy phase (14 s, shop open) → live round (100 s) → round end
+// (4 s) → next buy phase, until one team reaches 5 rounds or 9 rounds pass.
+// Rounds are won by eliminating the other team, by detonating the planted
+// spike, by defusing it, or by the defenders surviving the timer.
+// ?shot=start|play|end puts the game in a deterministic screenshot state.
+import * as THREE from 'three';
+import {
+  freshState, ROUND_TIME, BUY_TIME, WIN_ROUNDS, MAX_ROUNDS,
+  ROUND_WIN_REWARD, ROUND_LOSS_REWARD, WEAPONS,
+} from './state.js';
+import { createWorld } from './world.js';
+import { createPlayer, resetPlayer, updatePlayer, equipWeapon, buyItem, reload, throwGrenade } from './player.js';
+import { spawnBots, updateBot } from './bots.js';
+import { createHud } from './hud.js';
+import { createAudio } from './audio.js';
+import { stepGrenade } from './combat.js';
+
+const params = new URLSearchParams(location.search);
+const shotMode = params.get('shot');
+const downloadShot = params.get('download') === '1'; // ?download=1 saves the staged shot as a PNG file
+const seed = Number(params.get('seed') || 1);
+let seedState = seed * 2654435761 >>> 0;
+Math.random = () => { seedState = (seedState * 1664525 + 1013904223) >>> 0; return seedState / 4294967296; };
+
+const state = freshState();
+state.shotMode = shotMode;
+state.seed = seed;
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.getElementById('game').appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(78, innerWidth / innerHeight, 0.08, 220);
+const world = createWorld(scene);
+const audio = createAudio();
+const player = createPlayer(scene, camera, world, state);
+state.player = player;
+const hud = createHud(state, { onBuy: (id) => buyItem(player, state, id, audio) });
+
+let botCtx = null;
+
+function clearBots() {
+  for (const b of state.bots) scene.remove(b.group);
+  state.bots = [];
+}
+
+function startRound() {
+  clearBots();
+  resetPlayer(player, state);
+  state.grenades = [];
+  state.spike = { state: 'carried', site: null, progress: 0, fuse: 0, pos: null };
+  state.phase = 'buy';
+  state.phaseT = 0;
+  state.timer = BUY_TIME;
+  // 2 ally bots push with the player; 4 defenders hold the sites.
+  const allies = spawnBots(scene, world, state, 2, 'attack', 'rifle');
+  const enemies = spawnBots(scene, world, state, 4, 'defend', 'rifle');
+  state.bots = [...allies, ...enemies];
+  botCtx = { state, world, player, audio, scene, onKill, onPlant };
+  hud.hideBanner();
+  hud.renderBuy();
+  hud.showOverlay(
+    `SANDLINE PROTOCOL — Round ${state.round}`,
+    'Buy phase. Spend your money, then the round starts. Plant the spike at Foundry (A) or Depot (B), or eliminate all four defenders.',
+    'Click to play',
+  );
+}
+
+function beginLive() {
+  state.phase = 'live';
+  state.phaseT = 0;
+  state.timer = ROUND_TIME;
+  hud.hideOverlay();
+  hud.hideBanner();
+  hud.banner(`ROUND ${state.round} — GO`, 'Plant the spike or eliminate the defenders', 2200);
+  document.body.requestPointerLock?.();
+}
+
+function endRound(winner, reason) {
+  if (state.phase === 'roundEnd' || state.phase === 'matchEnd') return;
+  state.phase = 'roundEnd';
+  state.phaseT = 0;
+  state.winner = winner;
+  const won = winner === 'attack';
+  if (won) { state.money += ROUND_WIN_REWARD; state.score.attack++; audio.roundWin(); }
+  else { state.money += ROUND_LOSS_REWARD; state.score.defend++; audio.roundLose(); }
+  hud.banner(won ? 'ROUND WON' : 'ROUND LOST', reason, 0);
+  hud.feed(`${won ? 'Attackers take' : 'Defenders hold'} round ${state.round} — ${reason}`, won);
+  document.exitPointerLock?.();
+}
+
+function endMatch() {
+  state.phase = 'matchEnd';
+  const a = state.score.attack, d = state.score.defend;
+  state.matchWinner = a > d ? 'attack' : d > a ? 'defend' : 'draw';
+  const title = state.matchWinner === 'attack' ? 'MATCH WON — SANDLINE IS YOURS'
+    : state.matchWinner === 'defend' ? 'MATCH LOST' : 'MATCH DRAWN';
+  hud.showOverlay(title, `Final score — Attackers ${a} : ${d} Defenders. Kills ${state.stats.kills} · Plants ${state.stats.plants} · Accuracy ${accuracy()}%.`, 'Play again');
+}
+
+function accuracy() {
+  const s = state.stats;
+  return s.shots ? Math.round((s.hits / s.shots) * 100) : 0;
+}
+
+function onKill(victim, killer, how) {
+  const kn = killer.isPlayer ? 'You' : killer.name;
+  const vn = victim.isPlayer ? 'You' : victim.name;
+  hud.feed(`${kn} ${how === 'headshot' ? '☠' : '▸'} ${vn}${how === 'headshot' ? ' (headshot)' : ''}`, killer.isPlayer);
+  if (victim.isPlayer) { state.stats.deaths++; }
+}
+
+function onPlant(kind, who) {
+  if (kind === 'planted') {
+    hud.banner('SPIKE PLANTED', `Detonation in 25 s — defend Site ${state.spike.site}`, 3000);
+    hud.feed(`You planted the spike at Site ${state.spike.site}`, true);
+    audio.plantBeep();
+  } else if (kind === 'defused') {
+    endRound('defend', 'Spike defused by the defenders');
+  }
+}
+
+function checkRoundEnd() {
+  if (state.phase !== 'live') return;
+  const aliveEnemies = state.bots.filter((b) => b.team === 'defend' && b.hp > 0);
+  const aliveAllies = state.bots.filter((b) => b.team === 'attack' && b.hp > 0);
+  if (aliveEnemies.length === 0) endRound('attack', 'All defenders eliminated');
+  else if (player.hp <= 0 && aliveAllies.length === 0) endRound('defend', 'Attackers eliminated');
+  else if (state.timer <= 0) endRound('defend', 'Time expired — spike never detonated');
+}
+
+// Fixed-step simulation.
+const STEP = 1 / 60;
+let acc = 0;
+let last = performance.now();
+let shotFrames = 0;
+let downloadedShot = false;
+
+function simStep(dt) {
+  state.time += dt;
+  if (state.phase === 'buy') {
+    state.phaseT += dt;
+    state.timer = Math.max(0, BUY_TIME - state.phaseT);
+    if (state.phaseT >= BUY_TIME) beginLive();
+  } else if (state.phase === 'live') {
+    state.phaseT += dt;
+    state.timer = Math.max(0, ROUND_TIME - state.phaseT);
+    const sp = state.spike;
+    if (sp.state === 'planted') {
+      sp.fuse -= dt;
+      if (sp.fuse <= 0) { sp.state = 'detonated'; endRound('attack', 'Spike detonated'); }
+    }
+    if (sp.state === 'defusing' && !state.bots.some((b) => b.defusing && b.hp > 0)) {
+      sp.state = 'planted'; sp.progress = 0; // defuser died or walked off
+    }
+    if (state.phase === 'live') {
+      updatePlayer(player, dt, { state, world, camera, audio, scene, onKill, onPlant, onHitmarker: (h) => hud.showHitmarker(h), planting: false });
+      for (const b of state.bots) updateBot(b, dt, botCtx);
+      for (let i = state.grenades.length - 1; i >= 0; i--) {
+        if (stepGrenade(state.grenades[i], dt, world.colliders, [player, ...state.bots], state, audio, onKill)) {
+          scene.remove(state.grenades[i].mesh);
+          scene.remove(state.grenades[i].light);
+          state.grenades.splice(i, 1);
+        }
+      }
+      checkRoundEnd();
+    }
+  } else if (state.phase === 'roundEnd') {
+    state.phaseT += dt;
+    if (state.phaseT >= 4) {
+      if (state.score.attack >= WIN_ROUNDS || state.score.defend >= WIN_ROUNDS || state.round >= MAX_ROUNDS) endMatch();
+      else { state.round++; startRound(); }
+    }
+  }
+  // Site ring pulse.
+  for (const key of ['A', 'B']) {
+    const m = world.siteMeshes[key];
+    const active = state.spike.state === 'planted' && state.spike.site === key;
+    m.ring.material.opacity = active ? 0.6 + 0.4 * Math.sin(state.time * 6) : 0.85;
+  }
+}
+
+function frame(now) {
+  requestAnimationFrame(frame);
+  let dt = (now - last) / 1000;
+  last = now;
+  if (dt > 0.25) dt = 0.25;
+  if (!shotMode) { // screenshot modes freeze the staged state exactly
+    acc += dt;
+    while (acc >= STEP) { simStep(STEP); acc -= STEP; }
+  } else { acc = 0; }
+  hud.update(dt);
+  renderer.render(scene, camera);
+  // Screenshot download: after a few frames so shadows have settled, prepare
+  // the staged shot as a PNG on a visible download link (real <a download>,
+  // so the browser can save it from a click — auto-downloads without a user
+  // gesture are blocked). The link holds only the 3D canvas (no DOM HUD).
+  if (shotMode && downloadShot && !downloadedShot) {
+    if (!window.__shotLink) {
+      const names = { start: '1-start.png', play: '2-play.png', end: '3-end.png' };
+      const a = document.createElement('a');
+      a.id = 'shot-download';
+      a.textContent = '⬇ Download screenshot PNG';
+      a.href = '#';
+      a.download = names[shotMode] || `${shotMode}.png`;
+      a.style.cssText = 'position:fixed;top:12px;right:12px;z-index:99999;padding:10px 14px;font:600 14px system-ui,sans-serif;background:#f59e0b;color:#111;border:0;border-radius:8px;cursor:pointer;text-decoration:none;';
+      document.body.appendChild(a);
+      window.__shotLink = a;
+    }
+    if (++shotFrames >= 5) {
+      downloadedShot = true;
+      renderer.domElement.toBlob((blob) => {
+        if (!blob) return;
+        window.__shotLink.href = URL.createObjectURL(blob);
+      }, 'image/png');
+    }
+  }
+}
+
+// Input.
+addEventListener('keydown', (e) => {
+  if (e.repeat) return;
+  player.keys[e.code] = true;
+  if (e.code === 'KeyR') reload(player, audio);
+  if (e.code === 'KeyG') throwGrenade(player, 0, { state, scene, camera, audio });
+  if (e.code === 'KeyB' && state.phase === 'buy') hud.renderBuy();
+  if (e.code === 'Digit1') equipWeapon(player, 'pistol', true);
+  if (e.code === 'Digit2' && WEAPONS.smg && playerHas('smg')) equipWeapon(player, 'smg', true);
+  if (e.code === 'Digit3' && playerHas('rifle')) equipWeapon(player, 'rifle', true);
+  if (e.code === 'Digit4' && playerHas('sniper')) equipWeapon(player, 'sniper', true);
+  if (e.code === 'Enter' && state.phase === 'matchEnd') { state.round = 1; state.score = { attack: 0, defend: 0 }; state.money = 800; startRound(); }
+});
+addEventListener('keyup', (e) => { player.keys[e.code] = false; });
+addEventListener('mousedown', (e) => {
+  if (e.button === 0 && document.pointerLockElement) { player.mouseDown = true; audio.unlock(); }
+});
+addEventListener('mouseup', (e) => { if (e.button === 0) player.mouseDown = false; });
+addEventListener('mousemove', (e) => {
+  if (!document.pointerLockElement) return;
+  player.yaw -= e.movementX * 0.0021;
+  player.pitch -= e.movementY * 0.0021;
+  player.pitch = Math.max(-1.5, Math.min(1.5, player.pitch));
+});
+document.getElementById('play').addEventListener('click', () => {
+  audio.unlock();
+  if (state.phase === 'menu') { state.round = 1; state.score = { attack: 0, defend: 0 }; state.money = 800; startRound(); }
+  else if (state.phase === 'matchEnd') { state.round = 1; state.score = { attack: 0, defend: 0 }; state.money = 800; startRound(); }
+  else if (state.phase === 'buy') { beginLive(); }
+});
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+
+// Owned weapons are tracked by the buy menu: a weapon counts as owned once
+// bought this match. (Pistol is always owned.)
+const owned = new Set(['pistol']);
+function playerHas(id) { return owned.has(id) || player.weaponId === id; }
+// Record ownership when a buy button is clicked.
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-buy]');
+  if (b && WEAPONS[b.dataset.buy]) owned.add(b.dataset.buy);
+});
+
+// ---- Screenshot modes: deterministic states, no pointer lock needed. ----
+function applyShotMode() {
+  if (!shotMode) return;
+  if (shotMode === 'start') {
+    state.phase = 'menu';
+    hud.showOverlay(
+      'SANDLINE PROTOCOL',
+      'A round-based tactical FPS. Two teams, short rounds, money between rounds. Plant the spike at Foundry (A) or Depot (B) — or eliminate all four defenders. First to 5 rounds takes the match.',
+      'Click to play',
+    );
+    player.x = 0; player.z = -14; player.yaw = 0; player.pitch = -0.02;
+    camera.position.set(0, 1.62, -14);
+    camera.rotation.set(-0.02, 0, 0, 'YXZ');
+  } else if (shotMode === 'play') {
+    startRound();
+    beginLive();
+    // Stage the shot: player mid-lane, two defenders in the sightline.
+    player.x = 0; player.z = -6; player.yaw = 0.15; player.pitch = 0;
+    camera.position.set(0, 1.62, -6);
+    camera.rotation.set(0, 0.15, 0, 'YXZ');
+    const defs = state.bots.filter((b) => b.team === 'defend');
+    if (defs[0]) { defs[0].x = -2; defs[0].z = 4; defs[0].group.position.set(-2, 0, 4); defs[0].yaw = Math.PI; }
+    if (defs[1]) { defs[1].x = 3; defs[1].z = 7; defs[1].group.position.set(3, 0, 7); defs[1].yaw = Math.PI; }
+    const allies = state.bots.filter((b) => b.team === 'attack');
+    if (allies[0]) { allies[0].x = -3; allies[0].z = -9; allies[0].group.position.set(-3, 0, -9); }
+    hud.feed('You ▸ Vex', true);
+    hud.feed('Mara ▸ Rook', false);
+    hud.hideBanner();
+    // Fire one tracer so the frame reads as mid-combat.
+    player.mouseDown = false;
+  } else if (shotMode === 'end') {
+    startRound();
+    beginLive();
+    state.score.attack = 3; state.score.defend = 2;
+    state.spike = { state: 'planted', site: 'A', progress: 0, fuse: 18, pos: [-13, 8] };
+    hud.banner('SPIKE PLANTED', 'Detonation in 18 s — defend Site A (Foundry)', 0);
+    player.x = -8; player.z = 2; player.yaw = -0.9; player.pitch = 0.02;
+    camera.position.set(-8, 1.62, 2);
+    camera.rotation.set(0.02, -0.9, 0, 'YXZ');
+  }
+}
+
+// Boot.
+if (shotMode) {
+  applyShotMode();
+  // In shot modes the fixed-step loop would advance the round; freeze the
+  // simulation clock so the screenshot state stays exactly as staged.
+  if (shotMode === 'play' || shotMode === 'end') state.phase = 'live';
+  if (shotMode === 'start') state.phase = 'menu';
+} else {
+  hud.showOverlay(
+    'SANDLINE PROTOCOL',
+    'A round-based tactical FPS. Two teams, short rounds, money between rounds. Plant the spike at Foundry (A) or Depot (B) — or eliminate all four defenders. First to 5 rounds takes the match.',
+    'Click to play',
+  );
+  player.x = 0; player.z = -14;
+  camera.position.set(0, 1.62, -14);
+}
+requestAnimationFrame(frame);
