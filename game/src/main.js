@@ -305,9 +305,9 @@ function applyShotMode() {
     state.score.attack = 3; state.score.defend = 2;
     state.spike = { state: 'planted', site: 'A', progress: 0, fuse: 18, pos: [-13, 8] };
     hud.banner('SPIKE PLANTED', 'Detonation in 18 s — defend Site A (Foundry)', 0);
-    player.x = -8; player.z = 2; player.yaw = 2.45; player.pitch = 0.02;
-    camera.position.set(-8, 1.62, 2);
-    camera.rotation.set(0.02, 2.45, 0, 'YXZ');
+    player.x = -6; player.z = 2; player.yaw = 2.28; player.pitch = 0.02;
+    camera.position.set(-6, 1.62, 2);
+    camera.rotation.set(0.02, 2.28, 0, 'YXZ');
   }
 }
 
