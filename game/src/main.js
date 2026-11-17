@@ -279,16 +279,16 @@ function applyShotMode() {
       'A round-based tactical FPS. Two teams, short rounds, money between rounds. Plant the spike at Foundry (A) or Depot (B) — or eliminate all four defenders. First to 5 rounds takes the match.',
       'Click to play',
     );
-    player.x = 0; player.z = -14; player.yaw = 0; player.pitch = -0.02;
+    player.x = 0; player.z = -14; player.yaw = Math.PI; player.pitch = -0.02;
     camera.position.set(0, 1.62, -14);
-    camera.rotation.set(-0.02, 0, 0, 'YXZ');
+    camera.rotation.set(-0.02, Math.PI, 0, 'YXZ');
   } else if (shotMode === 'play') {
     startRound();
     beginLive();
     // Stage the shot: player mid-lane, two defenders in the sightline.
-    player.x = 0; player.z = -6; player.yaw = 0.15; player.pitch = 0;
+    player.x = 0; player.z = -6; player.yaw = Math.PI - 0.15; player.pitch = 0;
     camera.position.set(0, 1.62, -6);
-    camera.rotation.set(0, 0.15, 0, 'YXZ');
+    camera.rotation.set(0, Math.PI - 0.15, 0, 'YXZ');
     const defs = state.bots.filter((b) => b.team === 'defend');
     if (defs[0]) { defs[0].x = -2; defs[0].z = 4; defs[0].group.position.set(-2, 0, 4); defs[0].yaw = Math.PI; }
     if (defs[1]) { defs[1].x = 3; defs[1].z = 7; defs[1].group.position.set(3, 0, 7); defs[1].yaw = Math.PI; }
@@ -305,9 +305,9 @@ function applyShotMode() {
     state.score.attack = 3; state.score.defend = 2;
     state.spike = { state: 'planted', site: 'A', progress: 0, fuse: 18, pos: [-13, 8] };
     hud.banner('SPIKE PLANTED', 'Detonation in 18 s — defend Site A (Foundry)', 0);
-    player.x = -8; player.z = 2; player.yaw = -0.9; player.pitch = 0.02;
+    player.x = -8; player.z = 2; player.yaw = 2.45; player.pitch = 0.02;
     camera.position.set(-8, 1.62, 2);
-    camera.rotation.set(0.02, -0.9, 0, 'YXZ');
+    camera.rotation.set(0.02, 2.45, 0, 'YXZ');
   }
 }
 
